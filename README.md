@@ -19,3 +19,4 @@ Best Dice coefficient for the test set was obtained for twice trained with diffe
 Therefore, in the first iteration, model is not perfectly trained and can be improved. Green lines correspond to predicted masks, red to ground truth.
 ![image](https://user-images.githubusercontent.com/64214190/130696907-d246b6f9-1bfe-493b-8118-36efcd22a266.png)
 
+For further result improvement on the same data sample image augmentations are used from albumentations library. However, it caused overfitting, as well as larger encoders such as resnet34. Potential improvement can be reached with implementation of combined Dice and Cross-Entropy loss.
