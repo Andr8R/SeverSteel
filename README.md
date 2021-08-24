@@ -9,7 +9,9 @@
 (https://github.com/qubvel/segmentation_models.pytorch).
 
 Plots for the first training iteration:
+
 ![image](https://user-images.githubusercontent.com/64214190/130696828-b4e8082f-1ba5-4500-8a43-696bedf9a963.png)
+
 ![image](https://user-images.githubusercontent.com/64214190/130696789-df54b3dc-1cd9-4ee6-94d2-faeb0cdb2e75.png)
 
 
