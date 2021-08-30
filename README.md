@@ -29,4 +29,10 @@ As it was mentioned higher, was tried to estimate total loss as geometric mean o
 ![image](https://user-images.githubusercontent.com/64214190/131269499-538b71c4-0304-4b38-9e9f-c682abc73753.png)
 
 ### Summary: 
-The task was to train model on the sample of 1000 images for binary segmentation. As metrics was suggested to use Dice coefficient, which estimates positive predictions corresponding to ground truth labels. However, it's better to use similar Jaccard coefficient here. Problem of binary segmentation is that default dataset contains images of 4 different classes represented in a significant number with their own different features, what causes problems for the training. Also 1000 images is not very big dataset and even with some augmentations the model tries to overfit it, while validation scores doesn't improve. Overall, Dice score about 0.64 was gained. 
+The task was to train model on the balanced sample of 1000 images for binary segmentation. As metrics was suggested to use Dice coefficient, which estimates positive predictions corresponding to ground truth labels. However, it's better to use similar Jaccard coefficient here. Problem of binary segmentation is that default dataset contains images of 4 different classes represented in a significant number with their own different features, what causes problems for the training.
+
+![image](https://user-images.githubusercontent.com/64214190/131270175-954c7f7e-d500-4ddd-9ea0-8c7eef1ae3c6.png)
+
+(Therefore, for better score on presented dataset, it was easier to create sample with weights for different classes, but it's a bit wrong approach at all). 
+
+Also 1000 images is not very big dataset and even with some augmentations the model tries to overfit it, while validation scores doesn't improve. Overall, Dice score about 0.64 was gained. 
