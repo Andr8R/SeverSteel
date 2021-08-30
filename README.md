@@ -31,7 +31,7 @@ As it was mentioned higher, was tried to estimate total loss as geometric mean o
 ### Summary: 
 The task was to train model on the balanced sample of 1000 images for binary segmentation. As metrics was suggested to use Dice coefficient, which estimates positive predictions corresponding to ground truth labels. However, it's better to use similar Jaccard coefficient here. Problem of binary segmentation is that default dataset contains images of 4 different classes represented in a significant number with their own different features, what causes problems for the training.
 
-![image](https://user-images.githubusercontent.com/64214190/131270175-954c7f7e-d500-4ddd-9ea0-8c7eef1ae3c6.png)
+![image](https://user-images.githubusercontent.com/64214190/131270355-47411d06-03ca-49e5-a93e-48d25e3710eb.png)
 
 (Therefore, for better score on presented dataset, it was easier to create sample with weights for different classes, but it's a bit wrong approach at all). 
 
